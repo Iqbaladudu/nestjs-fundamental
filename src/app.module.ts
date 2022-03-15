@@ -17,9 +17,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       password: 'pass123',
       database: 'postgres',
       autoLoadEntities: true,
-      synchronize: true
-    })],
+      synchronize: true,
+    }),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })
-export class AppModule { }
+export class AppModule {}
